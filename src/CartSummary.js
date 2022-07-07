@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Badge, DropdownItem, DropdownMenu, DropdownToggle, NavItem, NavLink, UncontrolledDropdown} from "reactstrap";
+import {Link} from "react-router-dom";
 
 class CartSummary extends Component {
     renderSummary() {
@@ -27,7 +28,7 @@ class CartSummary extends Component {
                     }
                     <DropdownItem divider/>
                     <DropdownItem>
-                        Reset
+                        <Link to={"cart"}>Go to Cart</Link>
                     </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
